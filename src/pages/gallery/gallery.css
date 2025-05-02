@@ -1,0 +1,69 @@
+.gallery {
+    text-align: center;
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.gallery .middle {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.middle .image-top {
+    position: relative;
+    width: 100%;
+}
+
+.middle .image-top img {
+    width: calc(100% - 4px);
+    border: 2px solid var(--primary);
+    margin: 0 2px;
+    animation: fadeIn 0.5s;
+}
+
+.middle .image-top .control {
+    margin-top: -40px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    top: 50%;
+    transform: translateY(50%);
+    justify-content: space-between;
+}
+
+.image-top .control .awesome-icon {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    box-shadow: 3px 3px 7px rgba(245, 245, 245, 0.4);
+    font-size: 23px;
+    padding: 12px;
+}
+
+.middle .image-base {
+    width: 100%;
+    overflow-x: hidden;
+    background: var(--backgroundS);
+}
+
+.middle .image-base .image-case {
+    display: flex;
+    gap: 5px;
+    padding: 0 5px;
+    background: rgb(255, 255, 255);
+}
+
+.image-base .image-case .img:first-child {
+    border: 4px solid darkred;
+}
+
+.image-base .image-case img {
+    width: 55px;
+    height: 45px;
+    object-fit: cover;
+    margin: 5px 0;
+    border: 1.5px solid var(--background);
+}

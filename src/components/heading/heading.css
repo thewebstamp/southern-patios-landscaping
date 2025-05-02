@@ -1,0 +1,53 @@
+.heading {
+    width: 100%;
+    padding: 35px 0 3px;
+    background: var(--background);
+    border-bottom: 1px solid white;
+}
+
+.heading  h2 {
+    padding: 0 30px 2px;
+    color: var(--header);
+    font-family: "Josefin Sans", serif;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black;
+    animation: fadeIn 0.8s;
+}
+
+.heading  p {
+    padding: 0 30px 2px;
+    margin: 10px 0 25px;
+    text-transform: capitalize;
+    color: var(--textP);
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Josefin Sans", sans-serif;
+    animation: fadeIn 0.8s;
+}
+
+.top .top-design {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+
+.top .top-design .left, .top .top-design .right {
+    width: 10%;
+    border-top: 10px solid var(--primary);
+}
+
+.top .top-design .right {
+    border-left: 10px solid transparent;
+}
+
+.top .top-design .middle {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid var(--primary);
+    height: 0;
+    width: 80%;
+}
+
+.top .top-design .left {
+    border-right: 10px solid transparent;
+}

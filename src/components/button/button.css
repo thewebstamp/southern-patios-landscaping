@@ -1,0 +1,30 @@
+.button {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    background: white;
+    animation: slideUp 0.8s;
+}
+
+.button a.navigation-button {
+    width: calc(50% - 2px);
+    background-color: var(--background);
+    font-family: "Poppins", sans-serif;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+
+.button a.navigation-button:first-child {
+    background-color: var(--background);
+    color: var(--textP);
+}
+
+.button a.navigation-button:last-child {
+    background-color: var(--primary);
+    color: var(--background);
+    font-weight: 600;
+}

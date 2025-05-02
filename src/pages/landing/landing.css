@@ -1,0 +1,13 @@
+.landing {
+    position: relative;
+    min-height: 100vh;
+}
+
+.landing .background {
+    width: fit-content;
+    animation: slideUp 0.8s;
+}
+
+.landing .background img {
+    width: 100%;
+}

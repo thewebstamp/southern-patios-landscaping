@@ -1,0 +1,101 @@
+.landing-comp {
+    text-align: center;
+    background: var(--backGP);
+}
+
+.landing-comp .top {
+    background: var(--background);
+    padding: 0 30px;
+}
+
+.top .top-text {
+    animation: fadeIn 0.8s;
+}
+
+.top .top-text img {
+    margin-top: 40px;
+    width: 70px;
+}
+
+.top .top-text p {
+    margin-top: 15px;
+    text-transform: capitalize;
+    color: var(--textP);
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.top .top-text p span {
+    color: var(--accent);
+    font-weight: 800;
+}
+
+.top .trapezium {
+    margin: 40px auto 0;
+    width: 88%;
+    height: 0;
+    border-bottom: 16px solid var(--primary);
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+.landing-comp .middle {
+    padding: 14px 20px 0;
+    background: var(--backGP);
+    border: 1px solid var(--background);
+    margin: 0 1px;
+    border-bottom: none;
+    animation: slideDown 0.8s;
+}
+
+.middle .info-item {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.middle .info-item .icon-wrap {
+    border-bottom: 1px solid var(--background);
+    padding: 15px;
+    width: 60px;
+}
+
+.info-item .icon-wrap .icon {
+    color: var(--background);
+    font-size: 20px;
+}
+
+.middle .info-item p {
+    flex-grow: 1;
+    border-bottom: 1px solid var(--background);
+    text-align: left;
+    padding: 15px;
+    font-family: "Outfit", sans-serif;
+    font-size: 19px;
+    width: calc(100% - 60px);
+}
+
+.middle .info-item p a {
+    color: var(--background);
+}
+
+.middle .info-item .design {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 10px;
+}
+
+.middle .info-item .design .rect {
+    width: 1px;
+    height: calc(100% - 11px);
+    background: var(--background);
+}
+
+.middle .info-item .design .circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--primary);
+}
