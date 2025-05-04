@@ -55,14 +55,33 @@ function Gallery() {
             let groupOfImages = g.splice(0, length);
             return([...g, ...groupOfImages]);
         });
-    }
+    };
+
+    const [touchStart, setTouchStart] = useState(null);
+    const handleTouchStart = (e) => {
+        setTouchStart(e.touches[0].clientX);
+    };
+    const handleTouchEnd = (e) =>  {
+        if ( touchStart === null) return;
+
+        const touchEnd = e.changedTouches[0].clientX;
+        const diff = touchStart - touchEnd;
+
+        if (diff > 50) {
+            nextImage();
+        } else if (diff < -50) {
+            prevImage();
+        }
+
+        setTouchStart(null);
+    };
 
     return (
         <div className="gallery">
             <Heading title={titleG} description={descriptionG} />
             <div className="middle">
                 <div className="image-top">
-                    <img src={galleryImage[0]} alt="house painting" />
+                    <img onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd} src={galleryImage[0]} alt="house painting" />
                     <div className="control">
                         <FontAwesomeIcon className='awesome-icon' icon={faArrowLeft} onClick={prevImage} />
                         <FontAwesomeIcon className='awesome-icon' icon={faArrowRight} onClick={nextImage} />

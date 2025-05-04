@@ -4,11 +4,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 }
 
 .about-text {
     position: relative;
-    width: 100;
+    width: 100%;
     animation: slideDown 0.8s;
 }
 
@@ -41,9 +42,10 @@
 .about-bullet .item .a-check {
     border: 1.8px solid green;
     font-size: 8px;
-    width: fit-content;
+    width: 10px;
+    height: 10px;
     margin: auto;
-    padding: 4px;
+    padding: 5px;
     border-radius: 50%;
     color: var(--background);
 }
